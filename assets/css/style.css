@@ -1,7 +1,4 @@
-body {
-    background-color: white;
-
-}
+body {}
 
 .lavagna {
     display: flex;
@@ -20,7 +17,15 @@ body {
     width: 150px;
     height: 150px;
     display: inline-block;
-margin: 1em;
+    box-shadow: 2px 2px 5px 1px rgba(33, 33, 33, 0.5);
+    margin: 1em;
+    transition: transform 1s, boxshadow 0.5s ease-in-out;
+}
+
+.postit:hover {
+    transform: scale(1.5);
+    z-index: 100;
+    box-shadow: 5px 5px 8px 3px rgba(33, 33, 33, 0.5); 
 }
 
 .postitDispari {
@@ -33,4 +38,8 @@ margin: 1em;
     transform: rotate(-10deg);
     background: rgb(137, 33, 215);
     background: linear-gradient(0deg, rgba(137, 33, 215, 1) 0%, rgba(205, 45, 253, 1) 67%);
+}
+
+.postitText {
+    
 }
